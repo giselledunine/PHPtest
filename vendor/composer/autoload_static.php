@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2a19a4b33926348fa0f3fd6d871f2583
+class ComposerStaticInit93971780cfa47d2666cfe14f9b726aa5
 {
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -71,6 +71,7 @@ class ComposerStaticInit2a19a4b33926348fa0f3fd6d871f2583
     );
 
     public static $classMap = array (
+        'BankAccount' => __DIR__ . '/../..' . '/src/BankAccount.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
@@ -702,9 +703,9 @@ class ComposerStaticInit2a19a4b33926348fa0f3fd6d871f2583
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit2a19a4b33926348fa0f3fd6d871f2583::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit2a19a4b33926348fa0f3fd6d871f2583::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit2a19a4b33926348fa0f3fd6d871f2583::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit93971780cfa47d2666cfe14f9b726aa5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit93971780cfa47d2666cfe14f9b726aa5::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit93971780cfa47d2666cfe14f9b726aa5::$classMap;
 
         }, null, ClassLoader::class);
     }
