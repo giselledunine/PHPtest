@@ -11,16 +11,12 @@ protected string $roman;
 
     public function getRoman(int $number): string
     {
+
         if($number === 0){
             return $this->roman;
-        }else if ($number === 1) {
-            $this->roman = "I";
-            return $this->roman;
-        }else if ($number === 2) {
-            $this->roman = "II";
-            return $this->roman;
-        }else if ($number === 3) {
-            $this->roman = "III";
+        }
+        if($number <=3 && $number > 0) {
+            $this->roman = str_repeat('I', $number);
             return $this->roman;
         }
     }
